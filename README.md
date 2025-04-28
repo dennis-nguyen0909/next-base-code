@@ -1,22 +1,34 @@
-# Next.js CMS Project
+# 🚀 Next.js CMS Project
 
 A modern Content Management System built with Next.js 15, React 19, and TypeScript, featuring a robust UI component library and internationalization support.
 
-## 🚀 Tech Stack
+## ✨ Features
 
-- **Framework**: Next.js 15.2.4
-- **Language**: TypeScript
-- **UI Components**: Radix UI, TailwindCSS
-- **State Management**: React Query
-- **Form Handling**: React Hook Form with Zod validation
-- **Internationalization**: i18next
-- **Styling**: TailwindCSS with custom animations
-- **API Client**: Axios
-- **Utilities**: Lodash, Dayjs
+- 🎨 Modern UI components with Radix UI
+- 🌐 Internationalization support
+- 📝 Form validation with Zod
+- 📱 Responsive design with TailwindCSS
+- 🔒 Type-safe development with TypeScript
+- ⚡ Efficient data fetching with React Query
+- 📤 File upload capabilities with React Dropzone
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Framework | Next.js 15.2.4 |
+| Language | TypeScript |
+| UI Components | Radix UI, TailwindCSS |
+| State Management | React Query |
+| Form Handling | React Hook Form with Zod validation |
+| Internationalization | i18next |
+| Styling | TailwindCSS with custom animations |
+| API Client | Axios |
+| Utilities | Lodash, Dayjs |
 
 ## 📁 Project Structure
 
-```
+```bash
 ├── src/                 # Source code
 │   ├── app/            # Next.js app directory
 │   │   ├── [locale]/   # Internationalized routes
@@ -58,12 +70,12 @@ A modern Content Management System built with Next.js 15, React 19, and TypeScri
 
 ## 📦 Source Code Structure
 
-### `src/app/`
+### `src/app/` 📱
 - Contains the main application routes and layouts
 - Uses Next.js 13+ App Router
 - Supports internationalization with `[locale]` dynamic routing
 
-### `src/app/[locale]/`
+### `src/app/[locale]/` 🌐
 - Handles internationalized routes
 - Contains two main route groups:
   - `(auth)/`: Authentication-related routes
@@ -76,72 +88,74 @@ A modern Content Management System built with Next.js 15, React 19, and TypeScri
     - `settings/`: System settings
     - Other CMS-specific routes
 
-### `src/components/`
+### `src/components/` 🧩
 - Reusable UI components
 - Follows atomic design principles
 - Includes shared components like buttons, forms, modals, etc.
 
-### `src/containers/`
+### `src/containers/` 📦
 - Page-level components and layouts
 - Handles page-specific logic and state management
 - Integrates multiple components into complete pages
 
-### `src/contexts/`
+### `src/contexts/` 🔄
 - React context providers
 - Manages global application state
 - Handles theme, authentication, and other shared states
 
-### `src/hooks/`
+### `src/hooks/` 🎣
 - Custom React hooks
 - Reusable logic for components
 - Includes hooks for data fetching, form handling, etc.
 
-### `src/libs/`
+### `src/libs/` 📚
 - Third-party library configurations
 - Custom implementations of external libraries
 - Integration setups
 
-### `src/locales/`
+### `src/locales/` 🌍
 - Internationalization files
 - Translation strings for different languages
 - i18n configuration
 
-### `src/models/`
+### `src/models/` 📊
 - TypeScript interfaces and types
 - Data models for API responses
 - Shared type definitions
 
-### `src/schemas/`
+### `src/schemas/` 📝
 - Zod validation schemas
 - Form validation rules
 - API request/response validation
 
-### `src/services/`
+### `src/services/` 🔌
 - API service functions
 - HTTP client configurations
 - API endpoint definitions
 
-### `src/utils/`
+### `src/utils/` 🛠️
 - Helper functions
 - Common utilities
 - Shared business logic
 
-### `src/constants/`
+### `src/constants/` ⚙️
 - Application constants
 - Configuration values
 - Static data
 
-### `src/configs/`
+### `src/configs/` ⚡
 - Environment configurations
 - Feature flags
 - App settings
 
-## 🛠️ Prerequisites
+## 🚀 Getting Started
+
+### Prerequisites
 
 - Node.js (LTS version recommended)
 - Yarn package manager
 
-## ⚙️ Installation
+### Installation
 
 1. Clone the repository:
 ```bash
@@ -153,7 +167,7 @@ git clone [repository-url]
 yarn install
 ```
 
-## 🚀 Development
+### Development
 
 Start the development server:
 
@@ -163,7 +177,7 @@ yarn dev
 
 The application will be available at [http://localhost:3000](http://localhost:3000).
 
-## 📦 Build
+### Build
 
 To create a production build:
 
@@ -171,29 +185,19 @@ To create a production build:
 yarn build
 ```
 
-## 🏃‍♂️ Start Production Server
+### Start Production Server
 
 ```bash
 yarn start
 ```
 
-## 🔍 Linting
+### Linting
 
 Run the linter to check for code quality:
 
 ```bash
 yarn lint
 ```
-
-## 🌐 Features
-
-- Modern UI components with Radix UI
-- Internationalization support
-- Form validation with Zod
-- Responsive design with TailwindCSS
-- Type-safe development with TypeScript
-- Efficient data fetching with React Query
-- File upload capabilities with React Dropzone
 
 ## 📚 Documentation
 
