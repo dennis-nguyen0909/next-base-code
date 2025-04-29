@@ -107,16 +107,16 @@
 }
 
 :root {
-  --brand-100: #400c0a;
-  --brand-90: #771e17;
-  --brand-80: #b92715;
-  --brand-70: #df3617;
-  --brand-60: #EE5123;
-  --brand-50: #F27345;
-  --brand-40: #f6a37b;
-  --brand-30: #fac9ae;
-  --brand-20: #fde6d7;
-  --brand-10: #fef4ee;
+  --brand-100: #082032; /* Xanh đậm nhất */
+  --brand-90: #124559;
+  --brand-80: #1D6478;
+  --brand-70: #2C849A;
+  --brand-60: #3A9FC7; /* Xanh chủ đạo */
+  --brand-50: #52BDEC;
+  --brand-40: #77D1F8;
+  --brand-30: #A1E1FA;
+  --brand-20: #CEF1FC;
+  --brand-10: #E8F8FE; /* Xanh nhạt nhất */
 
   --disabled-foreground: #B3B3B3;
   --disabled-background: #D9D9D9;
@@ -177,7 +177,7 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
   --primary: var(--color-brand-60);
-  --primary-foreground: oklch(0.971 0.013 17.38);
+  --primary-foreground: #FFFFFF; /* Màu chữ trắng hoặc nhạt trên nền xanh */
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
   --muted: oklch(0.967 0.001 286.375);
@@ -195,8 +195,8 @@
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-primary: oklch(0.637 0.237 25.331);
-  --sidebar-primary-foreground: oklch(0.971 0.013 17.38);
+  --sidebar-primary: var(--color-brand-60);
+  --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: oklch(0.967 0.001 286.375);
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
@@ -210,8 +210,8 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.637 0.237 25.331);
-  --primary-foreground: oklch(0.971 0.013 17.38);
+  --primary: var(--color-brand-50);
+  --primary-foreground: #000000; /* Màu chữ đen hoặc đậm trên nền xanh nhạt hơn */
   --secondary: oklch(0.274 0.006 286.033);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.274 0.006 286.033);
@@ -229,8 +229,8 @@
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.21 0.006 285.885);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.637 0.237 25.331);
-  --sidebar-primary-foreground: oklch(0.971 0.013 17.38);
+  --sidebar-primary: var(--color-brand-50);
+  --sidebar-primary-foreground: #000000;
   --sidebar-accent: oklch(0.274 0.006 286.033);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);

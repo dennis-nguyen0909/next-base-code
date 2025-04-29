@@ -74,28 +74,28 @@ export default function Item1Page() {
           />
         </div>
         <Select onValueChange={(value) => setSort(value)}>
-          <SelectTrigger className="focus:ring-[#f54e1e] focus:border-[#f54e1e] w-2-xs [&>svg]:text-[#f54e1e] !text-[#f54e1e] border-[#f54e1e]">
+          <SelectTrigger className="focus:ring-bg-primary focus:border-bg-primary w-24 [&>svg]:text-bg-primary !text-bg-primary border-bg-primary">
             <SelectValue
               placeholder={t("item.sort")}
-              className="!text-[#f54e1e] !placeholder:text-[#f54e1e] font-medium"
+              className="!text-bg-primary !placeholder:text-bg-primary font-medium"
             />
           </SelectTrigger>
           <SelectContent className="bg-white shadow-lg rounded-md border border-gray-200">
             <SelectItem
               value="name"
-              className="hover:bg-[#f54e1e]/10 focus:bg-[#f54e1e]/10 cursor-pointer"
+              className="hover:bg-bg-primary/10 focus:bg-bg-primary/10 cursor-pointer"
             >
               {t("item.name")}
             </SelectItem>
             <SelectItem
               value="category"
-              className="hover:bg-[#f54e1e]/10 focus:bg-[#f54e1e]/10 cursor-pointer"
+              className="hover:bg-bg-primary/10 focus:bg-bg-primary/10 cursor-pointer"
             >
               {t("item.category")}
             </SelectItem>
             <SelectItem
               value="price"
-              className="hover:bg-[#f54e1e]/10 focus:bg-[#f54e1e]/10 cursor-pointer"
+              className="hover:bg-color-primary/10 focus:bg-color-primary/10 cursor-pointer"
             >
               {t("item.price")}
             </SelectItem>
