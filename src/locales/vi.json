@@ -47,6 +47,14 @@
         "connected": "Đã kết nối",
         "errorOccurred": "Đã xảy ra lỗi"
     },
+    "item": {
+        "name": "Mục 1",
+        "createdAt": "Ngày tạo",
+        "updatedAt": "Ngày cập nhật",
+        "actions": "Hành động",
+        "sort": "Sắp xếp",
+        "searching": "Đang tìm kiếm..."
+    },
     "langName": {
         "vi": "Tiếng Việt",
         "en": "Tiếng Anh"

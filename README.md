@@ -199,12 +199,51 @@ Run the linter to check for code quality:
 yarn lint
 ```
 
+### Customization Guide
+
+#### API Configuration
+1. Navigate to `src/services/config/axios.ts`
+2. Update the `API_URL` constant with your backend endpoint
+3. Modify default headers in `defaultHeaders` object as needed
+4. Add any custom interceptors for authentication or error handling
+
+#### Logo Integration
+1. Place your logo file in `public/images/` directory
+2. Supported formats: SVG, PNG, JPG
+3. Recommended dimensions: 200x50px for header logos
+4. Update logo path in your layout components
+
+#### Theme Customization
+1. Open `src/app/globals.css`
+2. Locate the `@theme inline` section
+3. Update color variables:
+   - Primary colors: `--color-primary`, `--color-primary-foreground`
+   - Brand colors: `--color-brand-100` through `--color-brand-10`
+   - Customize other theme variables as needed
+
+#### Metadata Configuration
+1. Edit `src/app/[locale]/(auth)/layout.tsx` or `src/app/[locale]/(cms)/layout.tsx`
+2. Update the `metadata` object:
+   ```typescript
+   export const metadata: Metadata = {
+     title: "Your App Name",
+     description: "Your app description",
+     keywords: ["your", "keywords"],
+     authors: [{ name: "Your Name" }],
+     openGraph: {
+       title: "Your App Name",
+       description: "Your app description",
+       images: ["/images/og-image.jpg"]
+     }
+   };
+   ```
+
 ## 📚 Documentation
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React Documentation](https://react.dev)
 - [TailwindCSS Documentation](https://tailwindcss.com/docs)
-- [Radix UI Documentation](https://www.radix-ui.com/docs)
+- [Radix UI Documentation](https://www.radix-ui.com/primitives/docs/overview/introduction)
 
 ## 🤝 Contributing
 

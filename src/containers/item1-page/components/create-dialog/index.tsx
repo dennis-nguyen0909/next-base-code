@@ -22,6 +22,7 @@ import { Input } from "@/components/ui/input";
 import { DialogFooter } from "@/components/ui/dialog";
 import { useState } from "react";
 import { useCreateItem1Mutation } from "@/hooks/item1/use-create-item1-mutation";
+import { useTranslation } from "react-i18next";
 
 const formSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -31,6 +32,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export function CreateDialog() {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -51,11 +53,11 @@ export function CreateDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button>Create Item</Button>
+        <Button>{t("common.create")}</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px]">
         <DialogHeader>
-          <DialogTitle>Create New Item</DialogTitle>
+          <DialogTitle>{t("common.create")}</DialogTitle>
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -64,16 +66,16 @@ export function CreateDialog() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>{t("item.name")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="Enter item name" {...field} />
+                    <Input placeholder={t("item.name")} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <DialogFooter>
-              <Button type="submit">Create</Button>
+              <Button type="submit">{t("common.create")}</Button>
             </DialogFooter>
           </form>
         </Form>
