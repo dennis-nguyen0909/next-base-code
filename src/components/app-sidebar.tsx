@@ -22,15 +22,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader className="flex justify-center items-center">
         {state === "collapsed" ? (
           <Image
-            src="/logos/short_skillify_logo.svg"
-            alt="logo"
+            src="/logos/your_logo.png"
+            alt="Your Logo"
             width={50}
             height={50}
           />
         ) : (
           <Image
-            src="/logos/long_skillify_logo.svg"
-            alt="logo"
+            src="/logos/your_logo.png"
+            alt="Your Logo"
             width={200}
             height={70}
           />

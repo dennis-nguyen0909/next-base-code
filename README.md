@@ -157,9 +157,9 @@ A modern Content Management System built with Next.js 15, React 19, and TypeScri
 
 ### Installation
 
-1. Clone the repository:
+1. Clone your forked repository:
 ```bash
-git clone [repository-url]
+git clone [https://github.com/dennis-nguyen0909/next-base-code.git]
 ```
 
 2. Install dependencies:

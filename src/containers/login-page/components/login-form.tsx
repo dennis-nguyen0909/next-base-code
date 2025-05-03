@@ -33,7 +33,6 @@ import { useAuth } from "@/contexts/auth";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import CertXLogo from "../../../../public/logos/certx_logo.png";
 
 export function LoginForm({
   className,
@@ -73,8 +72,8 @@ export function LoginForm({
     >
       <div className="flex justify-center mb-2">
         <Image
-          src={CertXLogo}
-          alt="CertX Logo"
+          src={"./logo/your_logo.png"}
+          alt="Your Logo"
           width={180}
           height={60}
           priority

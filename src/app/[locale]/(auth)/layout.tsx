@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CertX",
-  description: "CertX",
+  title: "Your App",
+  description: "Your App",
 };
 
 export default async function RootLayout({
