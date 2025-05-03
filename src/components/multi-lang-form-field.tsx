@@ -10,7 +10,7 @@ import {
   Path,
   UseFormStateReturn,
 } from "react-hook-form";
-import { cn } from "@/lib/utils";
+import { cn } from "@/libs/utils";
 
 type MultiLangFormFieldProps<T extends FieldValues> = {
   activeLocale: SupportedLocale;

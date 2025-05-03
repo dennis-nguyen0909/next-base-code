@@ -159,7 +159,7 @@ A modern Content Management System built with Next.js 15, React 19, and TypeScri
 
 1. Clone your forked repository:
 ```bash
-git clone [https://github.com/dennis-nguyen0909/next-base-code.git]
+git clone https://github.com/dennis-nguyen0909/next-base-code.git
 ```
 
 2. Install dependencies:
@@ -197,6 +197,14 @@ Run the linter to check for code quality:
 
 ```bash
 yarn lint
+```
+
+### TypeScript Type Checking
+
+To verify type safety and catch potential type errors in your project, run the TypeScript compiler check:
+
+``` bash
+yarn ts-check
 ```
 
 ### Customization Guide
